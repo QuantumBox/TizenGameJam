@@ -7,11 +7,11 @@
     <author-email></author-email>
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
-    <unique-id>1twi4436585j1</unique-id>
+    <unique-id>8epfbwu8rf33</unique-id>
     <saved-with-version>14600</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -19,8 +19,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>640</width>
-        <height>480</height>
+        <width>1280</width>
+        <height>720</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <use-loader-layout>0</use-loader-layout>
@@ -36,37 +36,30 @@
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-type name="TiledBackground" sid="5933568427043517">
+        <object-type name="TiledBackground" sid="8857838138907526">
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="bg" sid="3672758577179952">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3095100436395543" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TiledBackground2" sid="9342437217627526">
+        <object-type name="TiledBackground3" sid="8558054222345919">
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="bg2" sid="9875704618333521">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4451524229558467" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
+        <object-type name="TiledBackground2" sid="8103553210093943">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="StartButton" sid="7097745952337542">
+            <plugin id="Button" />
         </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout>Layout 1.xml</layout>
+        <layout>TitleScreen.xml</layout>
+        <layout>GameScreen.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>TitleEvents.xml</event-sheet>
+        <event-sheet>GameEvents.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder expanded="1" />
