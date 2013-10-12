@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -145,10 +146,29 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="4855779485242527">
+        <object-type name="CornerBox" sid="4855779485242527">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5208098002225585" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet" sid="150144402720938">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="4307201260421229">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="2643738342341018">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="1783260369242698">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5364284931961531" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
